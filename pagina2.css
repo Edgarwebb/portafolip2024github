@@ -1,0 +1,293 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    height: 100vh;
+    }
+
+
+/* *******************INCIO DE HEADER********************** */
+
+header{
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #111;
+}
+
+.cabecera, .subscabecera a{
+    text-align: right;
+    margin: 25px;
+    padding: 5px;
+    font-size: 1.2em;
+    color: #9cb4bb;
+     
+}
+.subscabecera a:hover{
+    color: #F16529;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: 0.5s;
+}
+
+
+/* ***********************BARRA DE NAVEGACION VERTICAL********************** */
+
+.slide1{
+    height: 100%;
+    width: 180px;
+    position: absolute;
+    background-color: #fff;
+    transition: 0.5s ease;
+    transform: translate(-180px);
+
+}
+
+.slide-h1{
+    color: #8000ff;
+    font-weight: 800;
+    text-align: right;
+    padding: 10px 0;
+    padding-right: 30px;
+    pointer-events: none;
+}
+
+.slide-ul li {
+    list-style: none;
+
+}
+
+.slide-ul li a{
+    color: #011a41;
+    font-weight: 500;
+    padding: 5px;
+    display: 5px 0;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.slide-ul li:hover a{
+    color: #fff;
+    background-color: #8000ff;
+}
+
+.slide-ul li a i {
+    width: 40px;
+    text-align: center;
+}
+
+input{
+    display: none;
+    visibility: hidden;
+    
+}
+
+.toggle{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 25px;
+    left: 30px;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #111;
+    cursor: pointer;
+
+}
+
+.toggle img{
+    width: 30px;
+    height: 30px;
+}
+
+
+.toggle .common{
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: #8000ff;
+    border-radius: 50px;
+    transition: 0.3 ease;
+
+}
+
+input:checked ~ .slide1{
+    transform: translate(0);
+    box-shadow: 0 0 15px #7D7D7D;
+}
+
+/* *************************************TEXTO PRINCIPAL*************************************
+ */
+.cnt_principal{
+    display: flex;
+}
+.cnt_work div{
+    border: 1px solid #fff;
+    width: 100px;
+    height: 100px;
+}
+
+.container{
+    background-color: #111;
+
+}
+.box2{
+    text-align: center;
+    color: white;
+    padding: 5px;
+
+}
+
+.box2 h1{
+    text-align: center;
+    color: white;
+    padding: 5PX;
+    text-transform: capitalize;
+    transition: 1s;
+
+}
+
+
+.box2 h1:hover{
+    text-align: center;
+    color: #F16529;
+    letter-spacing: 5px;
+    padding: 5px;
+    text-transform: capitalize;
+}
+
+.box2 p{
+    margin: 7px;
+    padding: 4px;
+}
+
+/* *******************************CARDS********************************** */
+
+.container2{
+   background-color: rgba(209, 28, 28, 0.2);
+   padding: 5px;
+   display: flex;
+   flex-flow: row wrap ;
+   align-content:space-around ;
+   justify-content: center;
+
+}
+
+.cards{
+    font-size: 25px;
+    text-align: center;
+    margin: 15px;
+    width: 25vw;
+    height: 60vh;
+    background-color: white;
+    border-radius: 0px 70px 0px 0px;
+    box-shadow: 0px 1px 10px #7D7D7D;
+    cursor: default;
+} 
+
+.cards:hover{
+    box-shadow: 5px 5px 20px #111 ;
+    transform: translateY(-4%);
+    transition: 0.3s;
+}
+
+figure img{
+    padding: 15px;
+    width: 400px;
+    height: 300px;
+    border-radius: 50px;
+ }
+
+.cards .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+}
+
+.cards .contenido a:hover{
+    background: #2fb4cc;
+    color: #fff;
+}
+
+/* *****************************MEDIAS QUERYS********************* */
+@media (max-width: 900px){
+    
+
+    body{
+        background-image: linear-gradient(to bottom,
+        #000000 0%,
+        #000000 50%,
+        #7D8E95 0%,
+        #7D8E95 100%);
+     height: 100vh;
+    }
+
+    header{
+        font-size: 6px;
+    }
+ 
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       } 
+/* *********************************cards************************* */
+    
+.container2{
+    background-color: rgba(209, 28, 28, 0.2);
+    display: flex;
+    flex-flow: wrap column ;
+    align-content:center ;
+ 
+ }
+
+ .contenido p{
+    text-align: center;
+    font-size: 15px;
+ }
+ 
+ .cards{
+     text-align: center;
+     width: 250px;
+     height: 50vh;
+     text-align: center;
+
+ }
+ 
+figure img{
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+ }
+ 
+ .cards .contenido a{
+     text-decoration: none;
+     display: inline-block;
+     padding: 10px;
+     margin-top: 10px;
+     color: #2fb4cc;
+     border: 1px solid #2fb4cc;
+     border-radius: 4px;
+ }
+ 
+ .cards .contenido a:hover{
+     background: #2fb4cc;
+     color: #fff;
+ }
+
+ .slide1{
+    height: 25%;
+    border-top-right-radius: 50px;
+}
+
+       }

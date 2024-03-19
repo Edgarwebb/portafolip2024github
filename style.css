@@ -1,0 +1,337 @@
+*{
+padding: 0%;
+margin: 0%;
+box-sizing: border-box;
+}
+
+/* *********************body***************************************** */
+
+body {
+    background-image: linear-gradient(to bottom,
+            #000000 0%,
+            #000000 80%,
+            #7D8E95 50%,
+            #7D8E95 100%);
+    height: 100vh;
+}
+
+    /* *******************INCIO DE HEADER********************** */
+
+    header{
+        height: 10vh;
+        width: 100vw;
+        display: flex;
+        flex-flow: row; 
+        justify-content: center;
+        /* background-color: #FBE0C3; */
+    }
+    
+    .cabecera, .subscabecera a{
+        text-align: right;
+        margin: 25px;
+        padding: 5px;
+        font-size: 1.2em;
+        color: #9cb4bb;
+         
+    }
+    .subscabecera a:hover{
+        color: #F16529;
+        text-decoration: none;
+        font-size: 1.5em;
+        transition: 0.5s;
+    }
+    
+
+
+  /*  ******************************************INICIO DE BARRA DE NAVEGACION VERTICAL*******************************************  */
+.slide1{
+    min-height: 90vh;
+    width: 180px;
+    border-top-right-radius: 15px;
+    position: absolute;
+    background-color: #fff;
+    transition: 1s;
+    transform: translate(-180px);
+
+}
+
+.slide-h1{
+    color: #9cb4bb;
+    font-weight: 800;
+    text-align: right;
+    padding: 10px 0;
+    padding-right: 30px;
+    pointer-events: none;
+}
+
+.slide-ul li {
+    list-style: none;
+}
+
+.slide-ul li a{
+    color: #011a41;
+    font-weight: 500;
+    padding: 5px;
+    display: 5px 0;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.slide-ul li:hover a{
+    color: #fff;
+    background-color: #8000ff;
+}
+
+.slide-ul li a i {
+    width: 40px;
+    text-align: center;
+}
+
+input{
+    display: none;
+    visibility: hidden;
+    
+}
+
+.toggle{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 25px;
+    left: 30px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: #000000;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.toggle img{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+input:checked ~ .slide1{
+    transform: translate(0);
+    box-shadow: 0 0 15px #7D7D7D;
+}
+
+/* ******************************TEXTO-TITULO PRINCIPAL******************************* */
+.box2 {
+    margin-left: 25px;
+    margin-top: 25px;
+    width: 40vw;
+    min-height: 40vh;
+    text-align: center;
+    color: #fff;
+}
+
+.box2 h1 {
+   
+    font-size: 3em;
+    text-transform: uppercase;
+    transition: 0.7s; 
+   
+}
+
+
+.box2 h1:hover {
+    color: #F16529;
+    letter-spacing: 9px; 
+}
+
+.box2 h2:hover {
+    color: #29f1ae;
+    letter-spacing: 10px;
+    transition: 0.7s;
+}
+
+
+.box2 h1 p {
+    font-size: 20px;
+    margin: 5px auto;
+}
+
+/* *******************************************TEXTO PRINCIPAL*********************************************** */
+
+.contenedorPrincipal {
+    display: flex;
+    flex-flow: row-reverse wrap;
+}
+
+.contenedorPrincipal ul {
+    width: 10vw;
+}
+
+.contenedorPrincipal ul h1 {
+    text-align: center;
+    font-size: 4em;
+    color: #F16529;
+    margin: 5px;
+    text-transform: uppercase;
+
+}
+
+.contenedorPrincipal ul h2 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.contenedorPrincipal h1:hover {
+    color: #29f1ae;
+    letter-spacing: 15px;
+    transition: 1.5s;
+}
+
+p {
+    text-align: center;
+    font-size: 1.1em;
+    color: #fff;
+    margin: 20px;
+
+}
+
+
+/* 
+**************************** IMAGENES CON ANIMACION PRINCIPAL***************************************** */
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    width: 100vw;
+}
+/* .box1 {
+    background: url(img/imgen1.jpg);
+    width: 600px;
+    height: 400px;
+    animation: slide 20s infinite;
+}
+
+@keyframes slide {
+    0% {
+        background: url(img/img1.jpg);
+    }
+
+    50% {
+        background: url(img/img2.jpg);
+    }
+
+    75% {
+        background: url(img/img3.jpg);
+    }
+
+    100% {
+        background: url(img/img4.jpg);
+    }
+
+} */
+
+/* *******************************ICONOS*********************************** */
+
+.Icon-container {
+    border: #fff;
+    width: 100%;
+
+}
+
+.socialicons {
+    display: flex;
+   margin-inline: 400px;
+
+}
+
+.socialicons a {
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.socialicons a i {
+    font-size: 2em;
+    color: #111;
+    border-radius: 50%;
+}
+
+.socialicons a:hover {
+    background-color: #111;
+    transform: 0.5s;
+}
+
+.socialicons a i:hover {
+    color: #fff;
+    transition: 0.5s;
+}
+
+
+/* ***************************************MEDIAS QUERYS******************************* */
+
+    
+
+@media (max-width: 900px){
+    
+
+    body{
+        background-image: linear-gradient(to bottom,
+        #000000 0%,
+        #000000 50%,
+        #7D8E95 0%,
+        #7D8E95 100%);
+     height: 100vh;
+
+    }
+
+    header{
+        font-size: 6px;
+    }
+ 
+    
+    .container{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+       } 
+
+       .box1{
+        width: 300px;
+        height: 100px;
+       }
+       
+       .Icon-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+       }
+       .box2 h1{
+        color: #A9BB1B;
+        text-align: center;
+        font-size: 1.3em;
+        
+       }
+
+       .box2 h1:hover {
+        letter-spacing: 3px; 
+    }
+       
+       p{
+        color: #fff;
+        font-size: 0.7em;
+        margin: 15px;
+       }
+       
+    .slide1{
+    height: 25%;
+    border-top-right-radius: 45px;
+}
+       }

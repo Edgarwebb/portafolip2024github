@@ -1,0 +1,238 @@
+*{
+    padding: 0%;
+    margin: 0%;
+} 
+
+ body{
+    background-image: linear-gradient(
+        to bottom,
+        #000000 0%,
+        #000000 65%,
+        #7D8E95 50%,
+        #7D8E95 100%
+    );
+    height: 100vh;
+    }
+
+    /* ********************************************INICIO DE HEADER****************************************** */
+
+header{
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.cabecera, .subscabecera a{
+    text-align: right;
+    margin: 25px;
+    padding: 5px;
+    font-size: 1.2em;
+    color: #9cb4bb;
+     
+}
+.subscabecera a:hover{
+    color: #F16529;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: 0.5s;
+}
+
+
+/* **********************************inicio de NAVEGACION VERTICAL************************************************************ */
+
+.slide1{
+    height: 100%;
+    width: 180px;
+    position: absolute;
+    background-color: #fff;
+    transition: 0.5s ease;
+    transform: translate(-180px);
+
+}
+
+.slide-h1{
+    color: #8000ff;
+    font-weight: 800;
+    text-align: right;
+    padding: 10px 0;
+    padding-right: 30px;
+    pointer-events: none;
+}
+
+.slide-ul li {
+    list-style: none;
+
+}
+
+.slide-ul li a{
+    color: #011a41;
+    font-weight: 500;
+    padding: 5px;
+    display: 5px 0;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+   .slide-ul li:hover a{
+    color: #fff;
+    background-color: #8000ff;
+}
+
+.slide-ul li a i {
+    width: 40px;
+    text-align: center;
+}
+
+
+
+.toggle{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 25px;
+    left: 30px;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #111;
+    cursor: pointer;
+
+} 
+
+.toggle img{
+    width: 30px;
+    height: 30px;
+}
+
+.toggle .common{
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: #8000ff;
+    border-radius: 50px;
+    transition: 0.3 ease;
+
+}
+
+
+
+input:checked ~ .slide1{
+    transform: translate(0);
+    box-shadow: 0 0 15px #7D7D7D;
+}
+
+
+/* 
+*********************************************inicio de FORMULARIO***************************************************** */
+
+.cntp{
+  text-align: center;
+  background-color: #c7c9bd;
+  padding: 15px;
+  height: 80vh;
+
+}
+
+.title{
+  font-size: 1.3em;
+}
+
+.box-edit{
+border-radius: 15px;
+width: 25%;
+padding: 15px 0px;
+
+}
+
+textarea{
+  resize: none; 
+  width: 50%;
+}
+
+.button1{
+  background-color:#004AAD;
+  width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.button1:hover{
+  background-color: #1e1964;
+  color: #A9BB1B;
+  transition: 0.5s;
+
+}
+
+.p{
+  text-align: center;
+  width: 58%;
+}
+
+
+@media (max-width: 900px){
+
+    header{
+      font-size: 6px;
+  }
+
+}
+
+.cntp{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #A9BB1B;
+    padding: 15px;
+    height: 80vh;
+  
+  }
+  
+  .title{
+    font-size: 3em;
+  }
+  
+  .box-edit{
+  border-radius: 15px;
+  width: 100%;
+  padding: 15px 0px;
+  
+  }
+  
+  textarea{
+    resize: none; 
+    width: 100%;
+  }
+  
+  .button1{
+    background-color: #004AAD;
+    width: 100%;
+    padding-top: 10px;
+    border-radius: 10px;
+    transition: 0.4s;
+    margin-top: 10px;
+ 
+  }
+  
+  .button1:hover{
+    background-color: #1e1964;
+    color: #A9BB1B;
+    transition: 0.5s;
+  
+  }
+  
+  .p{
+    text-align: center;
+    width: 58%;
+  }
+/* **************************barra de navegacion vertical***************************** */
+
+.slide1{
+    height: 25%;
+    border-top-right-radius: 50px;
+    padding-left: 5px;
+}
